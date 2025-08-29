@@ -1,0 +1,182 @@
+[
+  {
+    "id": "RESULT_001",
+    "name": "2024学年第一学期排课表",
+    "algorithmType": "GREEDY",
+    "generationTime": "2024-08-29T10:30:00",
+    "fitness": 0.85,
+    "conflictCount": 2,
+    "scheduleItems": [
+      {
+        "courseId": "C001",
+        "courseName": "语文",
+        "teacherId": "T001",
+        "teacherName": "张老师",
+        "classroomId": "CR001",
+        "classroomName": "高一(1)班教室",
+        "timeSlotId": "TS001",
+        "timeSlotName": "周一第1节",
+        "classIds": ["高一(1)班"],
+        "studentCount": 45,
+        "duration": 45,
+        "courseType": "THEORY"
+      },
+      {
+        "courseId": "C002",
+        "courseName": "数学",
+        "teacherId": "T002",
+        "teacherName": "李老师",
+        "classroomId": "CR001",
+        "classroomName": "高一(1)班教室",
+        "timeSlotId": "TS002",
+        "timeSlotName": "周一第2节",
+        "classIds": ["高一(1)班"],
+        "studentCount": 45,
+        "duration": 45,
+        "courseType": "THEORY"
+      },
+      {
+        "courseId": "C003",
+        "courseName": "英语",
+        "teacherId": "T003",
+        "teacherName": "王老师",
+        "classroomId": "CR001",
+        "classroomName": "高一(1)班教室",
+        "timeSlotId": "TS003",
+        "timeSlotName": "周一第3节",
+        "classIds": ["高一(1)班"],
+        "studentCount": 45,
+        "duration": 45,
+        "courseType": "THEORY"
+      },
+      {
+        "courseId": "C004",
+        "courseName": "物理",
+        "teacherId": "T004",
+        "teacherName": "刘老师",
+        "classroomId": "CR001",
+        "classroomName": "高一(1)班教室",
+        "timeSlotId": "TS004",
+        "timeSlotName": "周一第4节",
+        "classIds": ["高一(1)班"],
+        "studentCount": 45,
+        "duration": 45,
+        "courseType": "THEORY"
+      },
+      {
+        "courseId": "C005",
+        "courseName": "化学",
+        "teacherId": "T005",
+        "teacherName": "陈老师",
+        "classroomId": "CR001",
+        "classroomName": "高一(1)班教室",
+        "timeSlotId": "TS005",
+        "timeSlotName": "周一第5节",
+        "classIds": ["高一(1)班"],
+        "studentCount": 45,
+        "duration": 45,
+        "courseType": "THEORY"
+      },
+      {
+        "courseId": "C010",
+        "courseName": "体育",
+        "teacherId": "T010",
+        "teacherName": "吴老师",
+        "classroomId": "GYM001",
+        "classroomName": "体育馆",
+        "timeSlotId": "TS006",
+        "timeSlotName": "周一第6节",
+        "classIds": ["高一(1)班"],
+        "studentCount": 45,
+        "duration": 45,
+        "courseType": "PE"
+      },
+      {
+        "courseId": "C011",
+        "courseName": "语文",
+        "teacherId": "T013",
+        "teacherName": "黄老师",
+        "classroomId": "CR007",
+        "classroomName": "初一(1)班教室",
+        "timeSlotId": "TS009",
+        "timeSlotName": "周二第1节",
+        "classIds": ["初一(1)班"],
+        "studentCount": 40,
+        "duration": 45,
+        "courseType": "THEORY"
+      },
+      {
+        "courseId": "C012",
+        "courseName": "数学",
+        "teacherId": "T014",
+        "teacherName": "何老师",
+        "classroomId": "CR007",
+        "classroomName": "初一(1)班教室",
+        "timeSlotId": "TS010",
+        "timeSlotName": "周二第2节",
+        "classIds": ["初一(1)班"],
+        "studentCount": 40,
+        "duration": 45,
+        "courseType": "THEORY"
+      },
+      {
+        "courseId": "C013",
+        "courseName": "英语",
+        "teacherId": "T015",
+        "teacherName": "罗老师",
+        "classroomId": "CR007",
+        "classroomName": "初一(1)班教室",
+        "timeSlotId": "TS011",
+        "timeSlotName": "周二第3节",
+        "classIds": ["初一(1)班"],
+        "studentCount": 40,
+        "duration": 45,
+        "courseType": "THEORY"
+      },
+      {
+        "courseId": "C014",
+        "courseName": "音乐",
+        "teacherId": "T011",
+        "teacherName": "郑老师",
+        "classroomId": "MUSIC001",
+        "classroomName": "音乐教室1",
+        "timeSlotId": "TS014",
+        "timeSlotName": "周二第6节",
+        "classIds": ["初一(1)班"],
+        "studentCount": 40,
+        "duration": 45,
+        "courseType": "ART"
+      }
+    ],
+    "statistics": {
+      "totalCourses": 22,
+      "scheduledCourses": 20,
+      "unscheduledCourses": 2,
+      "teacherUtilization": 0.78,
+      "classroomUtilization": 0.82,
+      "timeSlotUtilization": 0.65,
+      "hardConstraintViolations": 0,
+      "softConstraintViolations": 2
+    },
+    "conflicts": [
+      {
+        "type": "SOFT_CONSTRAINT",
+        "description": "数学课未安排在偏好时间段",
+        "severity": "LOW",
+        "affectedCourses": ["C002"]
+      },
+      {
+        "type": "SOFT_CONSTRAINT",
+        "description": "体育课安排在室内，建议天气好时调整到操场",
+        "severity": "LOW",
+        "affectedCourses": ["C010"]
+      }
+    ],
+    "notes": "这是一个基于贪心算法生成的初高中排课表示例，展示了典型的排课结果结构。实际使用时会包含更多课程和更复杂的约束处理。",
+    "version": "1.0",
+    "createdBy": "SYSTEM",
+    "approved": false,
+    "effectiveDate": "2024-09-01"
+  }
+]
+

@@ -1,0 +1,102 @@
+# 排课系统配置文件
+server:
+  port: 8080
+  servlet:
+    context-path: /schedule
+
+spring:
+  application:
+    name: schedule-system
+
+  # 数据库配置（当使用数据库数据源时）
+  datasource:
+    url: jdbc:h2:mem:schedule
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+
+  # JPA配置
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: true
+
+  # H2控制台配置
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+# 排课系统数据源配置
+schedule:
+  datasource:
+    # 数据源类型: json 或 database
+    type: json
+
+    # 是否在启动时初始化测试数据
+    initialize-test-data: true
+
+    # 是否在启动时验证数据完整性
+    validate-on-startup: true
+
+    # JSON文件存储目录
+    json-data-directory: data
+
+    # 数据库配置
+    database:
+      url: jdbc:h2:mem:schedule
+      username: sa
+      password: ""
+      driver-class-name: org.h2.Driver
+      show-sql: false
+      ddl-auto: create-drop
+
+# 算法配置
+algorithm:
+  # 遗传算法配置
+  genetic:
+    population-size: 100
+    max-generations: 1000
+    crossover-rate: 0.8
+    mutation-rate: 0.1
+    elite-size: 10
+    tournament-size: 5
+
+  # 贪心算法配置
+  greedy:
+    strategy: MINIMUM_REMAINING_VALUES
+    tie-breaking-strategy: RANDOM
+    enable-local-improvement: true
+    max-improvement-iterations: 100
+
+  # 回溯算法配置
+  backtracking:
+    variable-selection-strategy: MINIMUM_REMAINING_VALUES
+    value-selection-strategy: LEAST_CONSTRAINING
+    max-search-time-seconds: 300
+    max-search-depth: 1000
+    enable-constraint-propagation: true
+    constraint-propagation-type: AC3
+
+# 日志配置
+logging:
+  level:
+    com.scott.schedule: INFO
+    org.springframework: WARN
+    org.hibernate: WARN
+  pattern:
+    console: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+
+# 管理端点配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+

@@ -1,0 +1,113 @@
+[
+  {
+    "id": "S000001",
+    "name": "张三",
+    "className": "高一(1)班",
+    "grade": "高一",
+    "email": "zhangsan@school.edu",
+    "major": "理科",
+    "studentNumber": "2024010101",
+    "electiveCourseIds": ["C015", "C016"],
+    "unavailableTimeSlots": []
+  },
+  {
+    "id": "S000002",
+    "name": "李四",
+    "className": "高一(1)班",
+    "grade": "高一",
+    "email": "lisi@school.edu",
+    "major": "理科",
+    "studentNumber": "2024010102",
+    "electiveCourseIds": ["C015", "C017"],
+    "unavailableTimeSlots": []
+  },
+  {
+    "id": "S000003",
+    "name": "王五",
+    "className": "高一(2)班",
+    "grade": "高一",
+    "email": "wangwu@school.edu",
+    "major": "文科",
+    "studentNumber": "2024010201",
+    "electiveCourseIds": ["C018", "C019"],
+    "unavailableTimeSlots": []
+  },
+  {
+    "id": "S000004",
+    "name": "赵六",
+    "className": "高二(1)班",
+    "grade": "高二",
+    "email": "zhaoliu@school.edu",
+    "major": "理科",
+    "studentNumber": "2023020101",
+    "electiveCourseIds": ["C020"],
+    "unavailableTimeSlots": []
+  },
+  {
+    "id": "S000005",
+    "name": "孙七",
+    "className": "高二(2)班",
+    "grade": "高二",
+    "email": "sunqi@school.edu",
+    "major": "文科",
+    "studentNumber": "2023020201",
+    "electiveCourseIds": ["C021"],
+    "unavailableTimeSlots": []
+  },
+  {
+    "id": "S000006",
+    "name": "周八",
+    "className": "高三(1)班",
+    "grade": "高三",
+    "email": "zhouba@school.edu",
+    "major": "理科",
+    "studentNumber": "2022030101",
+    "electiveCourseIds": [],
+    "unavailableTimeSlots": []
+  },
+  {
+    "id": "S000007",
+    "name": "吴九",
+    "className": "初一(1)班",
+    "grade": "初一",
+    "email": "wujiu@school.edu",
+    "major": "普通班",
+    "studentNumber": "2024070101",
+    "electiveCourseIds": [],
+    "unavailableTimeSlots": []
+  },
+  {
+    "id": "S000008",
+    "name": "郑十",
+    "className": "初二(1)班",
+    "grade": "初二",
+    "email": "zhengshi@school.edu",
+    "major": "普通班",
+    "studentNumber": "2023080101",
+    "electiveCourseIds": [],
+    "unavailableTimeSlots": []
+  },
+  {
+    "id": "S000009",
+    "name": "陈一一",
+    "className": "初三(1)班",
+    "grade": "初三",
+    "email": "chenyiyi@school.edu",
+    "major": "普通班",
+    "studentNumber": "2022090101",
+    "electiveCourseIds": [],
+    "unavailableTimeSlots": []
+  },
+  {
+    "id": "S000010",
+    "name": "林一二",
+    "className": "高一(3)班",
+    "grade": "高一",
+    "email": "linyier@school.edu",
+    "major": "艺术班",
+    "studentNumber": "2024010301",
+    "electiveCourseIds": ["C022"],
+    "unavailableTimeSlots": []
+  }
+]
+
